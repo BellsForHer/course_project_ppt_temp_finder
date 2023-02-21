@@ -1,0 +1,12 @@
+<h1>Templates#index</h1>
+
+<% @templates.each do |template| %>
+    <h2><%= template.title %></h2>
+    <ul>
+    <li><%= template.tag1 %></li>
+    <li><%= template.tag2 %></li>
+    <li><%= template.tag3 %></li>
+    </ul>
+    
+
+<% end %>
