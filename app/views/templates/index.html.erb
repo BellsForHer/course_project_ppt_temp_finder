@@ -10,3 +10,11 @@
     
 
 <% end %>
+
+<% form_tag templates_path, :method => 'get' do %>
+    <p> 
+        <%= text_field_tag :search, params[:search]%>
+        <%= submit_tag "search", :name => nil %>
+    </p>
+<% end %>
+
